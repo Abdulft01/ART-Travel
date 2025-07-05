@@ -17,7 +17,7 @@ Explore Indian destinations like Delhi, Mumbai, and Karnataka, and book your adv
 
 ## 🌐 Preview
 
-![Website Preview](img/preview.jpg)
+![Website Preview](img/preview.png)
 
 ---
 
