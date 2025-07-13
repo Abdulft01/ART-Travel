@@ -13,7 +13,7 @@ body {
 /* Hero Section */
 .hero-section {
   min-height: 90vh;
-  background-image: url('../img/hero-bg.jpg'); /* optional custom bg */
+  background-image: url('../img/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -26,10 +26,12 @@ body {
   color: #0d47a1;
   font-weight: 600;
 }
+
 .btn-outline-primary:hover {
   background-color: #0d47a1;
   color: white;
 }
+
 .btn-light {
   font-weight: 600;
 }
@@ -39,13 +41,17 @@ body {
   border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .destination-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
+
 .card-img-top {
   height: 220px;
   object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 /* Newsletter */
@@ -53,6 +59,7 @@ body {
   border: none;
   border-radius: 0;
 }
+
 .newsletter-section .btn {
   border-radius: 0;
 }

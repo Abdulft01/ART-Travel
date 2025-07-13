@@ -5,71 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Explore Delhi - ART Travel</title>
 
-  <!-- Bootstrap & Google Fonts -->
+  <!-- Bootstrap & Fonts -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-    }
-
-    .navbar {
-      background: linear-gradient(90deg, #0d47a1, #1976d2);
-    }
-
-    .navbar-brand {
-      font-weight: bold;
-      font-size: 1.6rem;
-    }
-
-    .header-section {
-      background: #e3f2fd;
-      padding: 4rem 0;
-      text-align: center;
-    }
-
-    .header-section h1 {
-      font-weight: 600;
-    }
-
-    .destination-card {
-      border: none;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .destination-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-img-top {
-      height: 220px;
-      object-fit: cover;
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-    }
-
-    .btn-outline-primary {
-      border-color: #1976d2;
-      color: #1976d2;
-    }
-
-    .btn-outline-primary:hover {
-      background-color: #1976d2;
-      color: #fff;
-    }
-
-    footer {
-      background: linear-gradient(90deg, #0d47a1, #1976d2);
-    }
-  </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark main-bg shadow-sm sticky-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">ART - Travel</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -86,10 +30,10 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="header-section">
+  <section class="header-section py-5 text-center bg-light">
     <div class="container">
-      <h1>Explore Delhi</h1>
-      <p class="lead text-muted">A fusion of culture, heritage, and modern life</p>
+      <h1 class="fw-bold">Explore Delhi</h1>
+      <p class="lead text-muted">A historical city blending the past with the present</p>
     </div>
   </section>
 
@@ -97,26 +41,27 @@
   <section class="py-5">
     <div class="container">
       <div class="row g-4">
-        <!-- Qutub Minar -->
-        <div class="col-md-4">
-          <div class="card destination-card h-100">
-            <img src="img/qutubminar.jpg" class="card-img-top" alt="Qutub Minar" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Qutub Minar</h5>
-              <p class="card-text">A UNESCO World Heritage site and symbol of Delhi’s Islamic architecture.</p>
-              <a href="booking.html?place=QutubMinar" class="btn btn-outline-primary w-100">Book Now</a>
-            </div>
-          </div>
-        </div>
 
         <!-- Red Fort -->
         <div class="col-md-4">
           <div class="card destination-card h-100">
-            <img src="img/redfort.jpg" class="card-img-top" alt="Red Fort" loading="lazy">
+            <img src="img/redfort.jpg" class="card-img-top" alt="Red Fort">
             <div class="card-body">
               <h5 class="card-title">Red Fort</h5>
-              <p class="card-text">The magnificent fort that narrates the tales of Mughal glory.</p>
+              <p class="card-text">A symbol of India's rich Mughal legacy and a UNESCO site.</p>
               <a href="booking.html?place=RedFort" class="btn btn-outline-primary w-100">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Qutub Minar -->
+        <div class="col-md-4">
+          <div class="card destination-card h-100">
+            <img src="img/qutubminar.jpg" class="card-img-top" alt="Qutub Minar">
+            <div class="card-body">
+              <h5 class="card-title">Qutub Minar</h5>
+              <p class="card-text">An iconic 73-meter tall tower with intricate carvings.</p>
+              <a href="booking.html?place=QutubMinar" class="btn btn-outline-primary w-100">Book Now</a>
             </div>
           </div>
         </div>
@@ -124,10 +69,10 @@
         <!-- India Gate -->
         <div class="col-md-4">
           <div class="card destination-card h-100">
-            <img src="img/indiagate.jpg" class="card-img-top" alt="India Gate" loading="lazy">
+            <img src="img/indiagate.jpg" class="card-img-top" alt="India Gate">
             <div class="card-body">
               <h5 class="card-title">India Gate</h5>
-              <p class="card-text">A war memorial and picnic spot that stands tall in Lutyens’ Delhi.</p>
+              <p class="card-text">A war memorial and an iconic location for tourists and locals.</p>
               <a href="booking.html?place=IndiaGate" class="btn btn-outline-primary w-100">Book Now</a>
             </div>
           </div>
@@ -138,13 +83,14 @@
   </section>
 
   <!-- Footer -->
-  <footer class="text-white text-center py-4">
+  <footer class="text-white text-center py-4 main-bg">
     <div class="container">
       <p class="mb-0">© 2025 ART - Travel. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
